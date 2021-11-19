@@ -10,17 +10,38 @@ const verify = (outline, input, output) => {
   });
 };
 
-verify('Supports multiple entries',
-  `
-  @misc{}
+verify('Supports multiple entries'
+  , `@misc{}
+     @Book {}
+     @CHAPTER {
+     }`
+  , [ {entry: 'item', type:    'misc'}
+    , {entry: 'item', type:    'book'}
+    , {entry: 'item', type: 'chapter'} ]
+);
 
-  @Book {}
+verify('Supports @string'
+  , `@string {}
+     @String{}
+     @STRING{
+     }
+     @STRING {
+     }`
+  , [ {entry: 'string'}
+    , {entry: 'string'}
+    , {entry: 'string'}
+    , {entry: 'string'} ]
+);
 
-  @CHAPTER {
-
-  }
-  `,
-  [ {type: 'misc'}
-  , {type: 'book'}
-  , {type: 'chapter'} ]
+verify('Supports @preamble'
+  , `@preamble {}
+     @Preamble{}
+     @PREAMBLE{
+     }
+     @PREAMBLE {
+     }`
+  , [ {entry: 'preamble'}
+    , {entry: 'preamble'}
+    , {entry: 'preamble'}
+    , {entry: 'preamble'} ]
 );

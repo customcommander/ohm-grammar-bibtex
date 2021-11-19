@@ -9,11 +9,23 @@ Semantics => Semantics.addOperation('eval', {
     return entries.eval();
   },
 
-  Entry(entryType, ignored_1, ignored_2) {
-    return {type: entryType.eval()};
+  Entry(entry) {
+    return entry.eval();
   },
 
-  EntryType(ignored_1, typeLetters) {
+  String(ignored_1, ignored_2, ignored_3, ignored_4) {
+    return {entry: "string"};
+  },
+
+  Preamble(ignored_1, ignored_2, ignored_3, ignored_4) {
+    return {entry: "preamble"};
+  },
+
+  Item(itemType, ignored_1, ignored_2) {
+    return {entry: 'item', type: itemType.eval()};
+  },
+
+  ItemType(ignored_1, typeLetters) {
     return typeLetters.eval().join('').toLowerCase();
   },
 

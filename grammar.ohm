@@ -2,6 +2,19 @@
 
 BibTeX {
   Entries   = Entry+
-  Entry     = EntryType "{" "}"
-  EntryType = "@" letter+
+
+  Entry     = String
+            | Preamble
+            | Item
+
+  String    = "@" caseInsensitive<"string"> "{"
+              "}"
+
+  Preamble  = "@" caseInsensitive<"preamble"> "{"
+              "}"
+
+  Item      = ItemType "{"
+              "}"
+
+  ItemType  = "@" letter+
 }
