@@ -1,0 +1,33 @@
+{
+  "name": "ohm-grammar-bibtex",
+  "version": "0.0.0",
+  "author": "Julien Gonzalez <hello@spinjs.com>",
+  "description": "Ohm grammar to parse .bib files",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/customcommander/ohm-grammar-bibtex.git"
+  },
+  "homepage": "https://github.com/customcommander/ohm-grammar-bibtex#readme",
+  "bugs": {
+    "url": "https://github.com/customcommander/ohm-grammar-bibtex/issues"
+  },
+  "keywords": [
+    "academia",
+    "bibtex",
+    "bibliography",
+    "parser"
+  ],
+  "main": "dist/index.js",
+  "files": [
+    "dist/"
+  ],
+  "scripts": {
+    "build": "make dist/index.js",
+    "test": "make test"
+  },
+  "devDependencies": {
+    "ohm-js": "^16.0.0",
+    "tape": "^5.3.2"
+  }
+}

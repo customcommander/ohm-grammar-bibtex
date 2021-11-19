@@ -1,0 +1,8 @@
+{
+  "name": "ohm-grammar-bibtex-dev",
+  "image": "customcommander/webdev:3.1",
+  "postCreateCommand": "npm install",
+  "settings": {
+    "terminal.integrated.shell.*": "/bin/sh"
+  }
+}

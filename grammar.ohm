@@ -1,0 +1,7 @@
+// Copyright (c) 2021 Julien Gonzalez <hello@spinjs.com>
+
+BibTeX {
+  Entries   = Entry+
+  Entry     = EntryType "{" "}"
+  EntryType = "@" letter+
+}
