@@ -27,7 +27,7 @@
     "test": "make test"
   },
   "devDependencies": {
-    "ohm-js": "^16.0.0",
-    "tape": "^5.3.2"
+    "ohm-js": "^16.2.0",
+    "tape": "^5.4.1"
   }
 }
