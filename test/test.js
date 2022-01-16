@@ -1,5 +1,5 @@
 const test = require('tape');
-const {grammar, semantics} = require('.');
+const {grammar, semantics} = require('..');
 
 const verify = (outline) => ({
   parse(bibtex) {

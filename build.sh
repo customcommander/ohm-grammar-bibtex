@@ -6,9 +6,9 @@ cat <<EOS >dist/index.js
  */
 
 const ohm = require('ohm-js');
-const g = ohm.grammar(String.raw\`$(cat grammar.ohm)\`);
+const g = ohm.grammar(String.raw\`$(cat src/grammar.ohm)\`);
 const s = g.createSemantics();
-($(cat semantics.js))(s);
+($(cat src/semantics.js))(s);
 module.exports = {grammar: g, semantics: s};
 
 EOS
