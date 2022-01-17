@@ -1,4 +1,4 @@
-/* Copyright (c) 2021 Julien Gonzalez <hello@spinjs.com> */
+/* Copyright (c) 2022 Julien Gonzalez <hello@spinjs.com> */
 
 /*
 Transformed into an IIFE at build time. (See build.sh)

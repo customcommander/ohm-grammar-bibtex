@@ -2,7 +2,7 @@
 cat <<EOS >dist/index.js
 /**
  * @license MIT
- * @copyright (c) 2021 Julien Gonzalez <hello@spinjs.com>
+ * @copyright (c) 2022 Julien Gonzalez <hello@spinjs.com>
  */
 
 const ohm = require('ohm-js');
